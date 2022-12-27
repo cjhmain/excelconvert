@@ -1,7 +1,7 @@
 package main
 
 import (
-	"excelconvert/machine/factory"
+	"excelconvert/factory"
 	"excelconvert/worker"
 )
 

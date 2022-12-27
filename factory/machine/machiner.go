@@ -3,6 +3,7 @@ package machine
 import (
 	"fmt"
 	"log"
+	"reflect"
 
 	"excelconvert/config"
 	"excelconvert/util"
@@ -58,11 +59,12 @@ func (m *Machiner) read(full_path string) {
 				fmt.Println(err)
 				return
 			}
+
 			for i, row := range rows {
 				if i != config.SheetHeadNote {
-					for j, col_row := range row {
-						if j != config.SheetHeadColumn {
-							fmt.Print("columns_", j, ":", col_row, " ")
+					for j, colRow := range row {
+						if j != config.SheetHeadColumnNote {
+							fmt.Print("columns_", j, ":", colRow, ",", reflect.TypeOf(colRow), ",", reflect.ValueOf(colRow), " ")
 						}
 					}
 					fmt.Print("\n")

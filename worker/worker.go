@@ -3,7 +3,7 @@ package worker
 import (
 	"log"
 
-	"excelconvert/machine/factory"
+	"excelconvert/factory"
 	"io/ioutil"
 	"sync"
 )

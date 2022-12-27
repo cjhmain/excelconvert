@@ -2,7 +2,7 @@ package factory
 
 import (
 	"excelconvert/config"
-	"excelconvert/machine"
+	"excelconvert/factory/machine"
 	"excelconvert/queue"
 
 	// "fmt"
